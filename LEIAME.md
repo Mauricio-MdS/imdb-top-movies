@@ -6,6 +6,7 @@ Mudar idioma para: [English](./README.md)
 
 * [Descrição](#descrição)
 * [Tecnologias](#tecnologias)
+* [Rodando](#rodando)
 
 <br>
 
@@ -16,7 +17,7 @@ Esse projeto faz parte do desafio [7 days of code de Java](https://7daysofcode.i
 O desafio é consumir a API dos 250 melhores filmes do IMDB.
 
 - [x] Day 1: Consumir a API do IMDB, buscar os top 250 filmes da lista deles e imprimir o JSON correspondente no console.
-- [ ] Day 2: ???
+- [x] Day 2: Parsear a resposta JSON obtida a partir do IMDB para extrair as suas informações e atributos
 - [ ] Day 3: ???
 - [ ] Day 4: ???
 - [ ] Day 5: ???
@@ -37,3 +38,13 @@ O desafio é consumir a API dos 250 melhores filmes do IMDB.
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width=30px/>
   Spring
 </div>          
+
+<br/>
+
+## Rodando
+
+Antes de rodar você precisa obter uma chave da API em [https://imdb-api.com/api](https://imdb-api.com/api) e criar esta variável de ambiente:
+
+> Variável: IMDB_TOP_MOVIES_URI
+>
+> Valor: https://imdb-api.com/en/API/Top250Movies/[ApiKeyHere]
