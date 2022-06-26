@@ -18,7 +18,7 @@ The challenge is to consume IMDB's 250 top movies API.
 
 - [x] Day 1: Consume the IMDB API, fetch the top 250 movies from their list and print the corresponding JSON in the console.
 - [x] Day 2: Parse the JSON response obtained from IMDB to extract its information and attributes
-- [ ] Day 3: ???
+- [x] Day 3: Model code to encapsulate movie attributes
 - [ ] Day 4: ???
 - [ ] Day 5: ???
 - [ ] Day 6: ???
@@ -42,8 +42,6 @@ The challenge is to consume IMDB's 250 top movies API.
 
 ## Running
 
-Before running you need to get an API Key in [https://imdb-api.com/api](https://imdb-api.com/api) and set this enviroment variable:
+Before running you need to get an API Key in [https://imdb-api.com/api](https://imdb-api.com/api) and set it as an enviroment variable with this name:
 
-> Variable: IMDB_TOP_MOVIES_URI
->
-> Value: https://imdb-api.com/en/API/Top250Movies/[ApiKeyHere]
+> IMDB_KEY

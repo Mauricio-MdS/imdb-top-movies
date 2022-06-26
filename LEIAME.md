@@ -18,7 +18,7 @@ O desafio é consumir a API dos 250 melhores filmes do IMDB.
 
 - [x] Day 1: Consumir a API do IMDB, buscar os top 250 filmes da lista deles e imprimir o JSON correspondente no console.
 - [x] Day 2: Parsear a resposta JSON obtida a partir do IMDB para extrair as suas informações e atributos
-- [ ] Day 3: ???
+- [x] Day 3: Modelar o código para encapsular os atributos dos filmes
 - [ ] Day 4: ???
 - [ ] Day 5: ???
 - [ ] Day 6: ???
@@ -43,8 +43,6 @@ O desafio é consumir a API dos 250 melhores filmes do IMDB.
 
 ## Rodando
 
-Antes de rodar você precisa obter uma chave da API em [https://imdb-api.com/api](https://imdb-api.com/api) e criar esta variável de ambiente:
+Antes de rodar você precisa obter uma chave da API em [https://imdb-api.com/api](https://imdb-api.com/api) e criar uma variável de ambiente com este nome:
 
-> Variável: IMDB_TOP_MOVIES_URI
->
-> Valor: https://imdb-api.com/en/API/Top250Movies/[ApiKeyHere]
+> IMDB_KEY
