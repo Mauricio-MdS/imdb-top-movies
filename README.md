@@ -19,7 +19,7 @@ The challenge is to consume IMDB's 250 top movies API.
 - [x] Day 1: Consume the IMDB API, fetch the top 250 movies from their list and print the corresponding JSON in the console.
 - [x] Day 2: Parse the JSON response obtained from IMDB to extract its information and attributes
 - [x] Day 3: Model code to encapsulate movie attributes
-- [ ] Day 4: ???
+- [x] Day 4: Create an HTML page where you can see information about the movie, including the poster and note.
 - [ ] Day 5: ???
 - [ ] Day 6: ???
 - [ ] Day 7: ???
@@ -36,7 +36,22 @@ The challenge is to consume IMDB's 250 top movies API.
 <div>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width=30px/>
   Spring
-</div>          
+</div>
+
+<div>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width=30px/>    
+  HTML
+</div>
+
+<div>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width=30px/>        
+  CSS
+</div>
+
+<div>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width=30px/>
+  Bootstrap
+</div>
 
 <br/>
 
