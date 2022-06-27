@@ -25,6 +25,8 @@ O desafio é consumir a API dos 250 melhores filmes do IMDB.
 - [ ] Day 7: ???
 
 <br/>
+<img src="./readme-assets/demo.png" alt="">
+<br/>
 
 ## Tecnologias
 
