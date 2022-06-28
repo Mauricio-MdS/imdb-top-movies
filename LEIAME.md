@@ -20,7 +20,7 @@ O desafio é consumir a API dos 250 melhores filmes do IMDB.
 - [x] Day 2: Parsear a resposta JSON obtida a partir do IMDB para extrair as suas informações e atributos
 - [x] Day 3: Modelar o código para encapsular os atributos dos filmes
 - [x] Day 4: Criar uma página HTML onde você possa ver as informações sobre o filme, incluindo o pôster e a nota.
-- [ ] Day 5: ???
+- [x] Day 5: Encapsular a chamada à API e o parseamento do JSON em classes.
 - [ ] Day 6: ???
 - [ ] Day 7: ???
 
@@ -44,11 +44,6 @@ O desafio é consumir a API dos 250 melhores filmes do IMDB.
 <div>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width=30px/>    
   HTML
-</div>
-
-<div>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width=30px/>        
-  CSS
 </div>
 
 <div>
