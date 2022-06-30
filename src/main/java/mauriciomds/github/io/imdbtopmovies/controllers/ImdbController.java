@@ -7,17 +7,20 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import mauriciomds.github.io.imdbtopmovies.models.Movie;
+import mauriciomds.github.io.imdbtopmovies.models.Content;
+import mauriciomds.github.io.imdbtopmovies.utils.ImdbParserUtil;
 import mauriciomds.github.io.imdbtopmovies.utils.ImdbUtil;
 
 @Controller
-@RequestMapping("/**")
-public class HomeController {
+@RequestMapping("/imdb")
+public class ImdbController {
 
   @GetMapping
   public String home(Model model) {
-    List<Movie> movies = ImdbUtil.getTopMovies();
-    model.addAttribute("movies", movies);
+    String unparsedContent = ImdbUtil.getTopMovies();
+    List<Content> contents = ImdbParserUtil.stringToListOfContent(unparsedContent);
+    model.addAttribute("contents", contents);
+    model.addAttribute("title", "Imdb Top Movies");
     return "home";
   }
   

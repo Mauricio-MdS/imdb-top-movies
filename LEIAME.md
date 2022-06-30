@@ -14,14 +14,14 @@ Mudar idioma para: [English](./README.md)
 
 Esse projeto faz parte do desafio [7 days of code de Java](https://7daysofcode.io/matricula/java)
 
-O desafio é consumir a API dos 250 melhores filmes do IMDB.
+O desafio iniciou como um consumidor da API dos 250 melhores filmes do IMDB. Porém, utilizando polimorfismo, o projeto cresceu para um consumidor generico de API's de conteúdo.
 
 - [x] Day 1: Consumir a API do IMDB, buscar os top 250 filmes da lista deles e imprimir o JSON correspondente no console.
 - [x] Day 2: Parsear a resposta JSON obtida a partir do IMDB para extrair as suas informações e atributos
 - [x] Day 3: Modelar o código para encapsular os atributos dos filmes
 - [x] Day 4: Criar uma página HTML onde você possa ver as informações sobre o filme, incluindo o pôster e a nota.
 - [x] Day 5: Encapsular a chamada à API e o parseamento do JSON em classes.
-- [ ] Day 6: ???
+- [x] Day 6: Deixar o código mais genérico, preparado para receber dados de outras APIs, usando o polimorfismo.
 - [ ] Day 7: ???
 
 <br/>
@@ -55,6 +55,7 @@ O desafio é consumir a API dos 250 melhores filmes do IMDB.
 
 ## Rodando
 
-Antes de rodar você precisa obter uma chave da API em [https://imdb-api.com/api](https://imdb-api.com/api) e criar uma variável de ambiente com este nome:
+Antes de rodar você precisa obter uma chave da API do IMDB em [https://imdb-api.com/api](https://imdb-api.com/api) e uma chave da API da Marvel em [https://developer.marvel.com/] (https://developer.marvel.com/) e criar as variáveis de ambiente com estes nomes:
 
 > IMDB_KEY
+> MARVEL_KEY

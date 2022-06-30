@@ -10,17 +10,17 @@ import java.net.http.HttpResponse.BodyHandlers;
 
 import mauriciomds.github.io.imdbtopmovies.exceptions.ApiConnectionException;
 
-public interface ImdbUtil {
+public interface MarvelUtil {
 
-  public static String getTopMovies(){
+  public static String getSeries(){
 
-    String key = System.getenv("IMDB_KEY");
+    String key = System.getenv("MARVEL_KEY");
     HttpClient client = HttpClient.newBuilder().build();
 
     try {
       HttpRequest request = HttpRequest
       	.newBuilder()
-      	.uri(new URI("https://imdb-api.com/en/API/Top250Movies/" + key))
+      	.uri(new URI("https://gateway.marvel.com/v1/public/series?orderBy=modified&limit=100" + key))
       	.GET()
       	.build();
 

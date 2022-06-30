@@ -4,26 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IMDB Top Movies</title>
+  <title th:text="${title}"></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
   <div class="container">
     <div class="container-fluid py-5 text-center">
-      <h1 class="display-5 fw-bold">IMDB Top Movies</h1>
+      <h1 class="display-5 fw-bold" th:text="${title}"></h1>
     </div>
+
+    <nav class="nav bg-light">
+      <a class="nav-link" th:href="@{/imdb}">Imdb</a>
+      <a class="nav-link" th:href="@{/marvel}">Marvel</a>
+    </nav>
+
     <div class="d-flex flex-row flex-wrap justify-content-around">
-      <div class="card mx-1 my-2" style="width: 9rem;" th:each="movie : ${movies}">
-        <img th:src="${movie.urlImage}" class="card-img-top" alt="">
+      <div class="card mx-1 my-2" style="width: 9rem;" th:each="content : ${contents}">
+        <img th:src="${content.urlImage}" class="card-img-top" alt="">
         <div class="card-body text-center">
-          <h5 class="card-title" th:text="${movie.title}"></h5>
-          (<span class="card-text" th:text="${movie.year}"></span>)
-          ★<span class="card-text" th:text="${movie.rating}"></span>
+          <h5 class="card-title" th:text="${content.title}"></h5>
+          <span class="card-text" th:text="${content.year}"></span>
+          <span class="card-text" th:text="${content.info}"></span>
         </div>
       </div>
     </div>
   </div>
     
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
