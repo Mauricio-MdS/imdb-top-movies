@@ -10,19 +10,20 @@ import java.net.http.HttpResponse.BodyHandlers;
 
 import mauriciomds.github.io.imdbtopmovies.exceptions.ApiConnectionException;
 
-public interface MarvelUtil {
+public interface KitsuApiUtil {
 
-  public static String getSeries(){
+  public static final String URI = "https://kitsu.io/api/edge/anime?sort=ratingRank&page[limit]=20&page[offset]=";
 
-    String key = System.getenv("MARVEL_KEY");
+  public static String getAnimes(int page){
+
     HttpClient client = HttpClient.newBuilder().build();
 
     try {
       HttpRequest request = HttpRequest
-      	.newBuilder()
-      	.uri(new URI("https://gateway.marvel.com/v1/public/series?orderBy=modified&limit=100" + key))
-      	.GET()
-      	.build();
+        .newBuilder()
+        .uri(new URI(URI + page))
+        .GET()
+        .build();
 
       HttpResponse<String> response =
         client.send(request, BodyHandlers.ofString());
@@ -31,7 +32,7 @@ public interface MarvelUtil {
 
     } catch ( URISyntaxException | IOException | InterruptedException e) {
       throw new ApiConnectionException(e);
-    }    
+    }
   }
 
 }

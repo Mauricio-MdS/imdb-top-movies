@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import mauriciomds.github.io.imdbtopmovies.models.Content;
 import mauriciomds.github.io.imdbtopmovies.utils.MarvelParserUtil;
-import mauriciomds.github.io.imdbtopmovies.utils.MarvelUtil;
+import mauriciomds.github.io.imdbtopmovies.utils.MarvelApiUtil;
 
 @Controller
 @RequestMapping("/marvel")
@@ -17,7 +17,7 @@ public class MarvelController {
 
   @GetMapping
   public String home(Model model) {
-    String unparsedContent = MarvelUtil.getSeries();
+    String unparsedContent = MarvelApiUtil.getSeries();
     List<Content> contents = MarvelParserUtil.stringToListOfContent(unparsedContent);
     model.addAttribute("contents", contents);
     model.addAttribute("title", "Marvel Series");

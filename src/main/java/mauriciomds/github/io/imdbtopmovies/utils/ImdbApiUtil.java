@@ -10,7 +10,7 @@ import java.net.http.HttpResponse.BodyHandlers;
 
 import mauriciomds.github.io.imdbtopmovies.exceptions.ApiConnectionException;
 
-public interface ImdbUtil {
+public interface ImdbApiUtil {
 
   public static String getTopMovies(){
 

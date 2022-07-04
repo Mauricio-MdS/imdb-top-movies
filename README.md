@@ -22,7 +22,12 @@ The challenge started as a consumer to IMDB's 250 top movies API. However, using
 - [x] Day 4: Create an HTML page where you can see information about the movie, including the poster and rating.
 - [x] Day 5: Encapsulate the API call and parsing the JSON into classes.
 - [x] Day 6: Make the code more generic, prepared to receive data from other APIs, using polymorphism.
-- [ ] Day 7: ???
+- [ ] Day 7: Sort the lists with different attributes
+
+Additional implementations: 
+
+- [x] Consume other API (Kitsu Anime Database)
+- [ ] Create unitary tests
 
 <br/>
 <img src="./readme-assets/demo.png" alt="">
