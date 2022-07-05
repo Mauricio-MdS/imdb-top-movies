@@ -7,8 +7,8 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import mauriciomds.github.io.imdbtopmovies.models.Anime;
 import mauriciomds.github.io.imdbtopmovies.models.Content;
-import mauriciomds.github.io.imdbtopmovies.models.Movie;
 
 public interface KitsuParserUtil extends JsonParserUtil{
 
@@ -19,7 +19,7 @@ public interface KitsuParserUtil extends JsonParserUtil{
 
       	for (int i = 0; i < arrayOfContent.size(); i++) {
       		JsonObject unparsedContent = arrayOfContent.get(i).getAsJsonObject().get("attributes").getAsJsonObject();
-      		content.add(new Movie(
+      		content.add(new Anime(
       			unparsedContent.get("canonicalTitle").getAsString(),
       			unparsedContent.get("posterImage").getAsJsonObject().get("tiny").getAsString(),
       			unparsedContent.get("startDate").getAsString().substring(0, 4),

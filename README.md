@@ -26,8 +26,9 @@ The challenge started as a consumer to IMDB's 250 top movies API. However, using
 
 Additional implementations: 
 
+- [x] Create unit tests using JUnit and Mockito
 - [x] Consume other API (Kitsu Anime Database)
-- [ ] Create unitary tests
+
 
 <br/>
 <img src="./readme-assets/demo.png" alt="">

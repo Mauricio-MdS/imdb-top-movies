@@ -26,8 +26,9 @@ O desafio iniciou como um consumidor da API dos 250 melhores filmes do IMDB. Por
 
 Additional implementations: 
 
+- [x] Criar testes unitários usando JUnit e Mockito
 - [x] Consumir outra API (Kitsu Anime Database)
-- [ ] Criar testes unitários
+
 
 <br/>
 <img src="./readme-assets/demo.png" alt="">
